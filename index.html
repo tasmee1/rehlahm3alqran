@@ -6,31 +6,16 @@
   <title>صفحة التسميع</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <img src="logo.png" class="logo" alt="Logo">
+  <img id="logo" src="logo.png" alt="Logo">
+  <h1>منصة التسميع</h1>
 
-  <div id="main-content">
-    <div class="title-text">ثقي بنفسك، وابدئي رحلتك مع الحفظ!</div>
+  <button id="startBtn">ابدئي التسميع</button>
+  <button id="listenBtn" disabled>اسمعي تلاوتك وصححي أخطائك</button>
 
-    <button onclick="startTasmii()">ابدأي التسميع</button>
-    <button onclick="startListening()">اسمعي تلاوتك وصححي أخطائك</button>
+  <div id="resultBox"></div>
 
-    <div id="counter">عدد المحاولات: 0</div>
-  </div>
-
-  <div id="popup" class="popup">
-    <p class="popup-text">هل تسميعك صحيح؟</p>
-    <button onclick="answerYes()">نعم</button>
-    <button onclick="answerNo()">لا</button>
-  </div>
-
-  <div id="success-message" class="popup">
-    <p class="success">أحسنتِ! تم التسميع بنجاح ✔️</p>
-  </div>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
