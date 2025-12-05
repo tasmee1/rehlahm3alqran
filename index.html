@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفحة التسميع</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <img src="logo.png" class="logo" alt="Logo">
+
+  <div id="main-content">
+    <div class="title-text">ثقي بنفسك، وابدئي رحلتك مع الحفظ!</div>
+
+    <button onclick="startTasmii()">ابدأي التسميع</button>
+    <button onclick="startListening()">اسمعي تلاوتك وصححي أخطائك</button>
+
+    <div id="counter">عدد المحاولات: 0</div>
+  </div>
+
+  <div id="popup" class="popup">
+    <p class="popup-text">هل تسميعك صحيح؟</p>
+    <button onclick="answerYes()">نعم</button>
+    <button onclick="answerNo()">لا</button>
+  </div>
+
+  <div id="success-message" class="popup">
+    <p class="success">أحسنتِ! تم التسميع بنجاح ✔️</p>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
